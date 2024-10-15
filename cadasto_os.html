@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="./img/Reciclar_Logo_Principal_Vertical_Negativo.png" type="image/x-icon">
     <link rel="stylesheet" href="./CADASTRO_OS/styles.css">
     <script src="./CADASTRO_OS/app.js" defer></script>
-    
 </head>
 <body>
     <div class="header">
@@ -18,8 +17,10 @@
         <form id="dataForm">
             <label for="numero_os">Número da OS:</label>
             <input type="text" id="numero_os" required>
+
             <label for="data_abertura">Data de Abertura:</label>
             <input type="date" id="data_abertura" required>
+
             <label for="data_vencimento">Data de Vencimento:</label>
             <input type="date" id="data_vencimento" required>
 
@@ -76,8 +77,8 @@
                  <option value="TI">TI</option>
             </select>
 
-            <label for="descrição_problema">Descrição do Problema:</label>
-            <select id="descrição_problema" required>
+            <label for="descricao_problema">Descrição do Problema:</label>
+            <select id="descricao_problema" required>
                 <option value="">ESCOLHA O PROBLEMA</option>
                   <option value="COMPUTADOR NÃO LIGA">COMPUTADOR NÃO LIGA</option>
                   <option value="CONEXÃO PROJETOR">CONEXÃO PROJETOR</option>
@@ -114,15 +115,14 @@
             <label for="status">Status:</label>
             <select id="status" required>
                 <option value="">ESCOLHA O STATUS</option>
-                  <option value="aberto">ABETO</option>
-                  <option value="em_andamento">EM ANDAMENTO</option>
+                <option value="aberto">ABERTO</option>
+                <option value="em_andamento">EM ANDAMENTO</option>
                 <option value="fechada">FECHADA</option>  
             </select>
-    
-            <label for="observações">OBSERVAÇÕES:</label>
-            <input type="observações" id="observações" required>
+
+            <label for="observacoes">OBSERVAÇÕES:</label>
+            <input type="text" id="observacoes" required>
             
-           
             <button type="submit">Salvar</button>
             <button type="button" onclick="limparFormulario()">Limpar</button>
             <button type="button" onclick="irParaHome()">Voltar para Home</button>

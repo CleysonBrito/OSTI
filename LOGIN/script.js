@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         (email === 'danilo.manzoli@reciclar.org.br' && password === 'reciclar1234')) {
         alert('Login bem-sucedido!');
         errorMessage.textContent = '';
-        window.location.href = 'cadasto_os.html'; // Redireciona para home.html
+        window.location.href = './home.html'; // Redireciona para home.html
     } else {
         errorMessage.textContent = 'E-mail ou senha incorretos.';
     }

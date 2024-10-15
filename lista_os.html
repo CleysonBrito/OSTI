@@ -9,15 +9,14 @@
 </head>
 <body>
     <header>
-               <img src="./img/Reciclar_Logo_Principal_Vertical_Negativo.png" alt="Logo Esquerdo" class="logo">
-               <h2>Lista de OS</h2>
+        <img src="./img/Reciclar_Logo_Principal_Vertical_Negativo.png" alt="Logo Esquerdo" class="logo">
+        <h2>Lista de OS</h2>
         <button class="home-button" onclick="goHome()">
             <img src="./img/saida.png" alt="Home">
         </button>
     </header>
     <main>
         <div class="search-container">
-            
             <select id="searchOptions">
                 <option value="numero_os">Número da OS</option>
                 <option value="Descricao">Descrição</option>
@@ -33,13 +32,13 @@
                 <tr>
                     <th>Número da OS</th>
                     <th>Data Abertura</th>
-                    <th>Data Fechameto</th>
+                    <th>Data Fechamento</th>
                     <th>Solicitante</th>
                     <th>Departamento</th>
                     <th>Descrição do Problema</th>
                     <th>Técnico Responsável</th>
                     <th>Status</th>
-                    <th>observações</th>
+                    <th>Observações</th>
                 </tr>
             </thead>
             <tbody>
@@ -50,6 +49,5 @@
     </main>
     <script src="./OSs/script.js"></script>
     <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
-
 </body>
 </html>

@@ -4,6 +4,7 @@ function goHome() {
 
 // Função para buscar e exibir dados da planilha
 function fetchOSData() {
+    // URL do Google Apps Script que retorna os dados da planilha
     const url = 'https://script.google.com/macros/s/AKfycbwYBlJsP30vtZ7L4FCDwXi6pf5hRAt8CVswdCEL2hl-t7UZYE0Ra18qxTxJwFYgA5QByA/exec';
 
     fetch(url)
@@ -16,15 +17,15 @@ function fetchOSData() {
                 const row = document.createElement('tr');
                 
                 row.innerHTML = `
-                    <td>${item.numero_os}</td>
-                    <td>${item.data_abertura}</td>
-                    <td>${item.data_fechamento}</td>
-                    <td>${item.solicitante}</td>
-                    <td>${item.departamento}</td>
-                    <td>${item.descricao_problema}</td>
-                    <td>${item.tecnico}</td>
-                    <td>${item.status}</td>
-                    <td>${item.observacoes}</td>
+                    <td>${item.numero_os || ''}</td>
+                    <td>${item.data_abertura || ''}</td>
+                    <td>${item.data_fechamento || ''}</td>
+                    <td>${item.solicitante || ''}</td>
+                    <td>${item.departamento || ''}</td>
+                    <td>${item.descricao_problema || ''}</td>
+                    <td>${item.tecnico || ''}</td>
+                    <td>${item.status || ''}</td>
+                    <td>${item.observacoes || ''}</td>
                 `;
                 
                 tableBody.appendChild(row);

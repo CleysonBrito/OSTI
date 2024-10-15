@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background: linear-gradient(to bottom, #9ba194, #9ba194); /* Define um fundo gradiente */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    height: 100vh; /* Define a altura para ocupar toda a altura da janela */
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza os filhos em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+}
+
+.header {
+    width: 100%; /* Define a largura para ocupar 100% */
+    display: flex; /* Usa flexbox para layout */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    padding: 10px; /* Adiciona preenchimento */
+    background-color: #00009C; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    position: fixed; /* Fixa a posição no topo */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.header h1 {
+    margin: 0; /* Remove a margem */
+    text-align: center; /* Centraliza o texto */
+    flex-grow: 1; /* Permite que o elemento cresça para ocupar o espaço disponível */
+}
+
+.logo, .home-icon {
+    height: 50px; /* Define a altura das imagens */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-right: 20px; /* Adiciona margem à direita */
+}
+
+.container {
+    background: white; /* Define a cor de fundo */
+    padding: 20px; /* Adiciona preenchimento */
+    border-radius: 8px; /* Adiciona cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    width: 80%; /* Define a largura */
+    max-width: 600px; /* Define a largura máxima */
+    margin-top: 80px; /* Adiciona margem superior para a barra fixa */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    flex-grow: 1; /* Permite que o elemento cresça para ocupar o espaço disponível */
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza os filhos em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+form {
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza os filhos em coluna */
+    width: 100%; /* Define a largura para ocupar 100% */
+}
+
+label {
+    margin-top: 10px; /* Adiciona margem superior */
+}
+
+input {
+    padding: 8px; /* Adiciona preenchimento */
+    margin-top: 5px; /* Adiciona margem superior */
+}
+
+button {
+    margin-top: 20px; /* Adiciona margem superior */
+    padding: 10px; /* Adiciona preenchimento */
+    background-color: #F20DE7; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 4px; /* Adiciona cantos arredondados */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+button:hover {
+    background-color: #00FF62; /* Muda a cor de fundo ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Ajusta a largura para telas menores */
+    }
+
+    .header h1 {
+        font-size: 1.5em; /* Ajusta o tamanho da fonte */
+    }
+
+    .logo, .home-icon {
+        height: 30px; /* Ajusta a altura das imagens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Ajusta a largura para telas menores */
+        padding: 10px; /* Ajusta o preenchimento */
+    }
+
+    .header h1 {
+        font-size: 1.2em; /* Ajusta o tamanho da fonte */
+    }
+
+    .logo, .home-icon {
+        height: 30px; /* Ajusta a altura das imagens */
+    }
+
+    button {
+        padding: 8px; /* Ajusta o preenchimento */
+        font-size: 0.9em; /* Ajusta o tamanho da fonte */
+    }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="./img/Reciclar_Logo_Principal_Vertical_Negativo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CADASTRO_OS/styles.css">
+    <script src="./CADASTRO_OS/app.js" defer></script>
+    
+</head>
+<body>
+    <div class="header">
+        <img src="./img/Reciclar_Logo_Principal_Vertical_Negativo.png" alt="Logo Esquerdo" class="logo">
+        <h1>Cadastro de OS</h1>
+        <img src="./img/saida.png" alt="Home" class="home-icon" onclick="irParaHome()">
+    </div>
+    <div class="container">
+        <form id="dataForm">
+            <label for="numero_os">Número da OS:</label>
+            <input type="text" id="numero_os" required>
+            <label for="data_abertura">Data de Abertura:</label>
+            <input type="date" id="data_abertura" required>
+            <label for="data_vencimento">Data de Vencimento:</label>
+            <input type="date" id="data_vencimento" required>
+
+            <label for="solicitante">Solicitante:</label>
+            <select id="solicitante" required>
+                <option value="">ESCOLHA O SOLICITANTE</option>
+                 <option value="Ana Paula Felix Damas">Ana Paula Felix Damas</option>
+                 <option value="Anderson Braghin Rosseto">Anderson Braghin Rosseto</option>
+                 <option value="Bruna Cristina Correia Porto">Bruna Cristina Correia Porto</option>
+                 <option value="Carlos Henrique de Lima">Carlos Henrique de Lima</option>
+                 <option value="Carolina Roberta Peixoto do Nascimento">Carolina Roberta Peixoto do Nascimento</option>
+                 <option value="Ciro Gustavo Barbosa de Oliveira">Ciro Gustavo Barbosa de Oliveira</option>
+                 <option value="Cleyson Aparecido Brito">Cleyson Aparecido Brito</option>
+                 <option value="Daiane da Silva dos Santos">Daiane da Silva dos Santos</option>
+                 <option value="Débora Praxades de Souza">Débora Praxades de Souza</option>
+                 <option value="Edilaine de Souza Santos">Edilaine de Souza Santos</option>
+                 <option value="Eleilde Barbosa Santos">Eleilde Barbosa Santos</option>
+                 <option value="Elisa Lima Villaméa Cotta">Elisa Lima Villaméa Cotta</option>
+                 <option value="Evandro Nogueira Santana Junior">Evandro Nogueira Santana Junior</option>
+                 <option value="Fabrícia Santos da Silva">Fabrícia Santos da Silva</option>
+                 <option value="Flavia Mello Rezende de Pinho">Flavia Mello Rezende de Pinho</option>
+                 <option value="Gleydson Aparecido de Britto">Gleydson Aparecido de Britto</option>
+                 <option value="Isadora Bonetto Ferrari">Isadora Bonetto Ferrari</option>
+                 <option value="Jaqueline das Virgens">Jaqueline das Virgens</option>
+                 <option value="Jenifer de Jesus Brito">Jenifer de Jesus Brito</option>
+                 <option value="Jéssica de Assis Figueiredo">Jéssica de Assis Figueiredo</option>
+                 <option value="João Pedro Viana Corrêa">João Pedro Viana Corrêa</option>
+                 <option value="Karoline Barbosa Beretta">Karoline Barbosa Beretta</option>
+                 <option value="Larissa Cristina Daniel Ferreira">Larissa Cristina Daniel Ferreira</option>
+                 <option value="Luciano Rodrigues de Lima">Luciano Rodrigues de Lima</option>
+                 <option value="Luisa Nascimento Handro">Luisa Nascimento Handro</option>
+                 <option value="Maria Beatriz Calaresi Ricca">Maria Beatriz Calaresi Ricca</option>
+                 <option value="Maria das Neves Amador Umbelino">Maria das Neves Amador Umbelino</option>
+                 <option value="Maria José dos Santos">Maria José dos Santos</option>
+                 <option value="Maria Mislene Pereira Lages">Maria Mislene Pereira Lages</option>
+                 <option value="Natália Rosa Muniz Sierpinski">Natália Rosa Muniz Sierpinski</option>
+                 <option value="Paulo Henrique Yaekashi">Paulo Henrique Yaekashi</option>
+                 <option value="Rafael de Souza Villares">Rafael de Souza Villares</option>
+                 <option value="Rosilene Teodora Batista de Sousa">Rosilene Teodora Batista de Sousa</option>
+                 <option value="Tainá Diogo da Silva">Tainá Diogo da Silva</option>
+                 <option value="Thainá Oliveira de Sousa">Thainá Oliveira de Sousa</option>
+                 <option value="Vivian Lavander Mendonça">Vivian Lavander Mendonça</option>
+                 <option value="Viviane de Jesus do Nascimento">Viviane de Jesus do Nascimento</option>
+                 <option value="JOVENS">JOVENS</option>
+            </select>
+
+            <label for="departamento">Departamento:</label>
+            <select id="departamento" required>
+                <option value="">ESCOLHA O DEPARTAMENTO</option>
+                 <option value="ADMINISTRATIVO / FINANCEIRO">ADMINISTRATIVO / FINANCEIRO</option>
+                 <option value="EDUCACIONAL">EDUCACIONAL</option>
+                <option value="RH">RH</option>
+                 <option value="DI">DI</option>
+                 <option value="TI">TI</option>
+            </select>
+
+            <label for="descrição_problema">Descrição do Problema:</label>
+            <select id="descrição_problema" required>
+                <option value="">ESCOLHA O PROBLEMA</option>
+                  <option value="COMPUTADOR NÃO LIGA">COMPUTADOR NÃO LIGA</option>
+                  <option value="CONEXÃO PROJETOR">CONEXÃO PROJETOR</option>
+                 <option value="FALHA DE LOGIN SERVIDOR">FALHA DE LOGIN SERVIDOR</option>
+                 <option value="FALHA IMPRESSORA">FALHA IMPRESSORA</option>
+                <option value="FALHA ROTEADOR">FALHA ROTEADOR</option>
+                <option value="FALHA WITCHES">FALHA WITCHES</option>                
+                <option value="FONTE">FONTE</option>
+                <option value="GOOGLE MEET">GOOGLE MEET</option>
+                 <option value="IP">IP</option>
+                 <option value="PACOTE OFFICE">PACOTE OFFICE</option>
+                 <option value="PC TRAVANDO">PC TRAVANDO</option>
+                 <option value="PROBLEMA COM SENHA">PROBLEMA COM SENHA</option>
+                 <option value="QUEDA DE INTERNET">QUEDA DE INTERNET</option>
+                 <option value="TEAMS">TEAMS</option>
+                 <option value="TROCA DE BATERIA">TROCA DE BATERIA</option>
+                 <option value="TROCA DE HD">TROCA DE HD</option>
+                 <option value="TROCA DE MEMORIA RAM">TROCA DE MEMORIA RAM</option>
+                 <option value="TROCA DE MOUSE">TROCA DE MOUSE</option>
+                 <option value="TROCA DE TECLADO">TROCA DE TECLADO</option>
+                 <option value="TROCA DE TELA">TROCA DE TELA</option>
+                 <option value="TROCA DE TONER">TROCA DE TONER</option>
+                 <option value="VELOCIDADE DE INTERNET">VELOCIDADE DE INTERNET</option>
+                 <option value="ZOOM">ZOOM</option>
+            </select>
+
+            <label for="tecnico">Técnico Responsável:</label>
+            <select id="tecnico" required>
+                <option value="">ESCOLHA O TÉCNICO</option>
+                  <option value="CLEYSON">CLEYSON</option>
+                  <option value="DANILO">DANILO</option>
+            </select>
+
+            <label for="status">Status:</label>
+            <select id="status" required>
+                <option value="">ESCOLHA O STATUS</option>
+                  <option value="aberto">ABETO</option>
+                  <option value="em_andamento">EM ANDAMENTO</option>
+                <option value="fechada">FECHADA</option>  
+            </select>
+    
+            <label for="observações">OBSERVAÇÕES:</label>
+            <input type="observações" id="observações" required>
+            
+           
+            <button type="submit">Salvar</button>
+            <button type="button" onclick="limparFormulario()">Limpar</button>
+            <button type="button" onclick="irParaHome()">Voltar para Home</button>
+        </form>
+        <div id="output"></div>
+    </div>
+</body>
+</html>

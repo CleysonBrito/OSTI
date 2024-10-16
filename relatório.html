@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estoque</title>
+    <title>RELATÓRIO</title>
     <link rel="shortcut icon" href="/img/Reciclar_Logo_Principal_Vertical_Negativo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./OSs/styles.css">
+    <link rel="stylesheet" href="./RELATÓRIOS/styles.css">
 </head>
 <body>
     <header>
@@ -19,19 +19,18 @@
         
        
         <!-- Adicionando o iframe para mostrar a planilha -->
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQBc2F2_zSv5sFrybBjeSFaBFX-hgeb908t2AdRz1T-IfeWwrM3-xqKUeJvgMh0GSVzaFMl8wpH4NqA/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" 
-                style="width: 100%; height: 600px; border: none;" 
-                title="Planilha de OS">
-        </iframe> 
-
         
+        <iframe title="OS DE SERVIÇOS" width="100%" height="600px" src="https://app.powerbi.com/view?r=eyJrIjoiYTM2MGY5NDEtZDMwZi00NzBlLWI4M2YtZDY0MWJjNTFmZDk3IiwidCI6ImE5ZTVhM2Y2LTE1ZjUtNGVmOC05OTI0LTAyM2RkYmIwMmI5ZCJ9" frameborder="0" allowFullScreen="true">
+
+        </iframe>
+
         >
 
         <button onclick="exportToExcel()">Exportar</button>
         
         
     </main>
-    <script src="./OSs/script.js"></script>
+    <script src="./RELATÓRIOS/script.js"></script>
     <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
 </body>
 </html>

@@ -7,3 +7,7 @@ document.getElementById('btnCadastro').addEventListener('click', function() {
 document.getElementById('btnOS').addEventListener('click', function() {
     window.location.href = './lista_os.html'; // Redireciona para cadastro.html
 });
+
+document.getElementById('btnRE').addEventListener('click', function() {
+    window.location.href = './relatório.html'; // Redireciona para cadastro.html
+});

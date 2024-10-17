@@ -28,6 +28,18 @@
         >
 
         <button onclick="exportToExcel()">Exportar</button>
+
+        <script>
+            function exportToExcel() {
+                const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQBc2F2_zSv5sFrybBjeSFaBFX-hgeb908t2AdRz1T-IfeWwrM3-xqKUeJvgMh0GSVzaFMl8wpH4NqA/pub?output=xlsx";
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = 'arquivo.xlsx';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        </script>
         
         
     </main>

@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ header img {
     width: 100px;
     float: left;
     margin-left: 20px;
-    margin: -9px
+    margin: -9px;
 }
 
 header h1 {
@@ -37,10 +38,16 @@ header h1 {
     display: flex;
     justify-content: space-around;
     width: 50%;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+}
+
+.button-container a {
+    flex: 1 1 30%; /* Ajusta a largura dos botões */
+    margin: 10px; /* Espaçamento entre os botões */
 }
 
 .button-container img {
-    width: 350px;
+    width: 100%; /* Ajusta a largura das imagens para preencher o contêiner */
     cursor: pointer;
     transition: transform 0.5s;
 }
@@ -58,4 +65,17 @@ header h1 {
 
 .home-icon img {
     width: 40px;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Coloca os botões em coluna */
+        align-items: center; /* Centraliza os botões */
+    }
+
+    .button-container a {
+        flex: 1 1 100%; /* Ajusta a largura dos botões para 100% */
+        margin: 5px 0; /* Espaçamento vertical entre os botões */
+    }
 }
